@@ -8,17 +8,19 @@ public class matriser {
 		         { 7, 8, 9 }
 		      };
 		int[][] matrise2 = {
-		         { 1, 2, 3 },
-		         { 4, 5, 6 },
-		         { 7, 8, 9 }
+		         { 5, 10, 15 },
+		         { 20, 25, 30 },
+		         { 35, 40, 45 }
 		      };
+		//tester metodene:
+		
 		skrivUtv1(matrise1);
-		//String a = tilStreng(matrise1);
-		//System.out.println(a);
-		//a = tilStreng(skaler(5,matrise1));
-		//System.out.println(a);
-		boolean b = erLik(matrise1,matrise2);
-		System.out.println(b);
+		String a = tilStreng(matrise1);
+		System.out.println(a);
+		a = tilStreng(skaler(5,matrise1));				//Denne skalerer matrise1!
+		System.out.println(a);							//
+		boolean lik = erLik(matrise1,matrise2);
+		System.out.println(lik);
 	}
 	
 	
