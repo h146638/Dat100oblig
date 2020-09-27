@@ -17,9 +17,9 @@ public class tabell {
 	    int posisjon = posisjonTall(tabell,tall);		//5
 		System.out.println("tallet er i posisjon: " + posisjon + " i tabellen (-1 = finnes ikke)");     //5
 		int[] revers = reverser(tabell);				//6
-		skrivUt(revers);								//6
+		skrivUt(revers);								//6*/
 		boolean sortert = erSortert(tabell);			//7
-		System.out.println(sortert);					//7  */
+		System.out.println(sortert);					//7  
 		int[] sammen = settSammen(tabell,tabell2);		//8
 		skrivUt(sammen);								//8
 		
@@ -104,7 +104,9 @@ public class tabell {
 	public static boolean erSortert (int[] tabell)
 	{
 		boolean sort = true;
-		int a = tabell[0] - 1;
+		if (tabell.length > 0) {
+		int a = 0;
+		a = tabell[0] - 1;
 		for (int i : tabell) { 
 			if (i < a) {
             	sort = false;
@@ -114,7 +116,7 @@ public class tabell {
             	a = i;
             	}
             }
-		
+		}
 		return sort;
 	}
 	public static int[] settSammen(int[] tabell1,int[] tabell2) {

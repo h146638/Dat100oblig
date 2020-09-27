@@ -14,10 +14,10 @@ public class matriser {
 		      };
 		//tester metodene:
 		
-		skrivUtv1(matrise1);
-		String a = tilStreng(matrise1);
-		System.out.println(a);
-		a = tilStreng(skaler(5,matrise1));				//Denne skalerer matrise1!
+		skrivUtv1(matrise1);							//Skriver bare ut
+		String a = tilStreng(matrise1);					//lagrer som String
+		System.out.println(a);							//skriver ut string
+		a = tilStreng(skaler(5,matrise1));				//Denne skalerer matrise1 med 5 i dette tilfellet!
 		System.out.println(a);							//
 		boolean lik = erLik(matrise1,matrise2);
 		System.out.println(lik);
